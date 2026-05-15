@@ -371,418 +371,784 @@ const SCALE_SCORE_MAPS = {
 const FORM_QUESTIONS = [
   {
     name:"1",
-    section:"Sintomas Psicóticos Nucleares",
+    section:"Triagem Inicial",
     type:"radio",
-    text:"Você já ouviu vozes, sons ou falas que outras pessoas ao redor não ouviam?",
+    text:"Você já teve alguma experiência de ouvir, ver, sentir ou perceber algo que outras pessoas ao redor não percebiam?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
   {
     name:"2",
-    section:"Sintomas Psicóticos Nucleares",
+    section:"Triagem Inicial",
     type:"radio",
-    text:"Você já viu pessoas, vultos, imagens ou cenas que outras pessoas ao redor não viam?",
+    text:"Você já teve alguma crença ou certeza muito forte que outras pessoas consideravam falsa, exagerada ou sem provas suficientes?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
   {
     name:"3",
-    section:"Sintomas Psicóticos Nucleares",
+    section:"Triagem Inicial",
     type:"radio",
-    text:"Você já sentiu cheiros, gostos ou sensações estranhas no corpo sem uma causa clara e que outras pessoas não percebiam?",
+    text:"Essas experiências ou crenças causaram prejuízo real no trabalho, nos estudos, nos relacionamentos, na rotina ou no cuidado pessoal?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
   {
     name:"4",
-    section:"Sintomas Psicóticos Nucleares",
+    section:"Triagem Inicial",
     type:"radio",
-    text:"Você já teve certeza de algo que outras pessoas diziam não ser real, como perseguição, vigilância, mensagens escondidas ou conspiração contra você?",
+    text:"Outras pessoas próximas já disseram que você parecia desconfiado, confuso, fora da realidade, muito diferente do habitual ou com comportamento estranho?",
     options:YNP,
-    scale:"YNP"
-  },
-  {
-    name:"5",
-    section:"Sintomas Psicóticos Nucleares",
-    type:"radio",
-    text:"Você já percebeu que seus pensamentos, sua fala ou suas ideias ficavam confusos ou embaralhados a ponto de outras pessoas não conseguirem entender você?",
-    options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
 
   {
-    name:"6",
-    section:"Alucinações",
+    name:"5",
+    section:"Alucinações Auditivas",
     type:"radio",
-    text:"Com que frequência você ouve vozes conversando com você, comentando o que você faz ou chamando seu nome sem que haja alguém falando de verdade?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já ouviu vozes quando não havia ninguém falando de verdade?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"6",
+    section:"Alucinações Auditivas",
+    type:"radio",
+    text:"Quando ouviu vozes, elas pareciam vir de fora da sua cabeça, como se fossem sons reais do ambiente?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"7",
-    section:"Alucinações",
+    section:"Alucinações Auditivas",
     type:"radio",
-    text:"Com que frequência você ouve vozes discutindo entre si sobre você sem que haja alguém presente?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já ouviu vozes comentando suas ações, seus pensamentos ou o que estava acontecendo com você?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"8",
-    section:"Alucinações",
+    section:"Alucinações Auditivas",
     type:"radio",
-    text:"Com que frequência você vê vultos, pessoas, objetos ou cenas que outras pessoas não veem?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já ouviu duas ou mais vozes conversando entre si sobre você?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"9",
-    section:"Alucinações",
+    section:"Alucinações Auditivas",
     type:"radio",
-    text:"Com que frequência você sente toques, choques, insetos, movimentos no corpo ou outras sensações físicas estranhas sem uma causa física clara?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já ouviu vozes dando ordens ou mandando você fazer algo?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"10",
-    section:"Alucinações",
+    section:"Alucinações Auditivas",
     type:"radio",
-    text:"Com que frequência você sente cheiros ou gostos estranhos que ninguém mais percebe?",
+    text:"Com que frequência essas vozes acontecem ou aconteceram no período de maior intensidade?",
     options:FREQ5,
-    scale:"FREQ5"
+    scale:"FREQ5",
+    required:true
   },
 
   {
     name:"11",
-    section:"Delírios",
+    section:"Alucinações Visuais e Corporais",
     type:"radio",
-    text:"Você já acreditou que estava sendo seguido, espionado, perseguido ou vigiado sem ter provas claras disso?",
+    text:"Você já viu pessoas, vultos, animais, objetos, luzes, sombras ou cenas que outras pessoas não viam?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
   {
     name:"12",
-    section:"Delírios",
+    section:"Alucinações Visuais e Corporais",
     type:"radio",
-    text:"Você já acreditou que pessoas, televisão, rádio, internet ou redes sociais estavam enviando mensagens especiais diretamente para você?",
+    text:"Essas imagens pareciam reais, como se estivessem no ambiente, e não apenas na imaginação?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
   {
     name:"13",
-    section:"Delírios",
+    section:"Alucinações Visuais e Corporais",
     type:"radio",
-    text:"Você já acreditou que alguém conseguia colocar pensamentos na sua cabeça ou tirar pensamentos da sua mente?",
+    text:"Você já sentiu toques, choques, insetos, movimentos internos, dor estranha ou sensações no corpo sem explicação médica clara?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
   {
     name:"14",
-    section:"Delírios",
+    section:"Alucinações Visuais e Corporais",
     type:"radio",
-    text:"Você já acreditou que seus pensamentos estavam sendo lidos, controlados ou transmitidos para outras pessoas?",
+    text:"Você já sentiu cheiros ou gostos que outras pessoas não percebiam e que não tinham uma fonte identificável?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
   {
     name:"15",
-    section:"Delírios",
+    section:"Alucinações Visuais e Corporais",
     type:"radio",
-    text:"Você já acreditou que estava sendo controlado por forças externas, espíritos, tecnologia, energia ou por outra pessoa?",
+    text:"Essas experiências acontecem ou aconteceram quando você estava completamente acordado, sem estar adormecendo ou acordando?",
     options:YNP,
-    scale:"YNP"
-  },
-  {
-    name:"16",
-    section:"Delírios",
-    type:"radio",
-    text:"Você já acreditou ter uma missão especial, um poder extraordinário ou uma importância muito acima do comum de um jeito que outras pessoas consideravam exagerado ou irreal?",
-    options:YNP,
-    scale:"YNP"
-  },
-  {
-    name:"17",
-    section:"Delírios",
-    type:"radio",
-    text:"Você já acreditou que seu parceiro estava traindo você sem evidências suficientes, mesmo quando outras pessoas tentavam mostrar o contrário?",
-    options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
 
   {
-    name:"18",
-    section:"Pensamento e Fala Desorganizados",
+    name:"16",
+    section:"Delírios Persecutórios",
     type:"radio",
-    text:"Com que frequência sua fala fica confusa, enrolada ou difícil de entender, mesmo para pessoas próximas?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já teve certeza de que estava sendo perseguido, vigiado, espionado, ameaçado ou seguido sem provas claras?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"17",
+    section:"Delírios Persecutórios",
+    type:"radio",
+    text:"Você já teve certeza de que pessoas, instituições, vizinhos, colegas, familiares ou desconhecidos estavam planejando prejudicar você?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"18",
+    section:"Delírios Persecutórios",
+    type:"radio",
+    text:"Você mudou sua rotina, evitou lugares, se escondeu, confrontou alguém ou tentou se proteger por acreditar que estava sob ameaça?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"19",
-    section:"Pensamento e Fala Desorganizados",
+    section:"Delírios Persecutórios",
     type:"radio",
-    text:"Com que frequência você muda de assunto de forma tão rápida ou desconectada que as pessoas não conseguem acompanhar seu raciocínio?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Mesmo quando outras pessoas apresentavam explicações alternativas, você mantinha forte convicção de que a ameaça era real?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
+
   {
     name:"20",
-    section:"Pensamento e Fala Desorganizados",
+    section:"Delírios de Referência",
     type:"radio",
-    text:"Com que frequência você sente que seus pensamentos ficam embaralhados, quebrados ou difíceis de organizar?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já acreditou que televisão, rádio, internet, redes sociais, músicas, placas ou acontecimentos comuns traziam mensagens especiais direcionadas a você?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"21",
-    section:"Pensamento e Fala Desorganizados",
+    section:"Delírios de Referência",
     type:"radio",
-    text:"Com que frequência você responde algo que parece não ter relação com a pergunta feita?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já acreditou que pessoas desconhecidas estavam falando de você, rindo de você ou enviando sinais indiretos para você sem evidência clara?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"22",
-    section:"Pensamento e Fala Desorganizados",
+    section:"Delírios de Referência",
     type:"radio",
-    text:"Com que frequência você tem dificuldade para terminar uma ideia porque seu pensamento se perde, trava ou foge do assunto?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Essas interpretações fizeram você mudar comportamentos, evitar lugares, confrontar pessoas ou ficar em vigilância constante?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
 
   {
     name:"23",
-    section:"Comportamento Desorganizado",
+    section:"Delírios de Controle, Influência e Pensamento",
     type:"radio",
-    text:"Com que frequência você age de um jeito que outras pessoas consideram muito estranho, sem sentido ou inadequado para a situação?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já teve certeza de que seus pensamentos estavam sendo lidos por outras pessoas?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"24",
-    section:"Comportamento Desorganizado",
+    section:"Delírios de Controle, Influência e Pensamento",
     type:"radio",
-    text:"Com que frequência você tem dificuldade para manter cuidados básicos, como banho, troca de roupa, alimentação ou organização pessoal?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já teve certeza de que seus pensamentos estavam sendo transmitidos para outras pessoas, como se todos pudessem saber o que você pensava?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"25",
-    section:"Comportamento Desorganizado",
+    section:"Delírios de Controle, Influência e Pensamento",
     type:"radio",
-    text:"Com que frequência você fica muito agitado, inquieto ou andando de um lado para o outro sem conseguir se organizar?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já teve certeza de que alguém ou alguma força colocava pensamentos na sua mente?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"26",
-    section:"Comportamento Desorganizado",
+    section:"Delírios de Controle, Influência e Pensamento",
     type:"radio",
-    text:"Com que frequência você fica parado por muito tempo, travado ou com dificuldade para iniciar movimentos ou responder aos outros?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já teve certeza de que alguém ou alguma força retirava pensamentos da sua mente?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"27",
-    section:"Comportamento Desorganizado",
+    section:"Delírios de Controle, Influência e Pensamento",
     type:"radio",
-    text:"Com que frequência você repete movimentos, gestos, posturas ou falas de forma estranha ou sem perceber o motivo?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já teve certeza de que seus atos, falas, sentimentos ou movimentos estavam sendo controlados por outra pessoa, tecnologia, energia, espírito ou força externa?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
 
   {
     name:"28",
-    section:"Sintomas Negativos",
+    section:"Outros Conteúdos Delirantes",
     type:"radio",
-    text:"Com que frequência você perdeu interesse por atividades que antes eram importantes ou prazerosas para você?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já teve certeza de possuir poderes especiais, missão extraordinária, identidade especial ou importância muito acima do comum?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"29",
-    section:"Sintomas Negativos",
+    section:"Outros Conteúdos Delirantes",
     type:"radio",
-    text:"Com que frequência você sente pouca motivação para começar ou terminar atividades do dia a dia?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já teve certeza de que seu corpo estava deformado, contaminado, apodrecendo, doente ou alterado sem confirmação médica compatível?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"30",
-    section:"Sintomas Negativos",
+    section:"Outros Conteúdos Delirantes",
     type:"radio",
-    text:"Com que frequência você evita contato com outras pessoas, mesmo sem um motivo claro?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já teve certeza de que seu parceiro ou parceira estava traindo você mesmo sem evidências suficientes e mesmo quando outras pessoas discordavam?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"31",
-    section:"Sintomas Negativos",
+    section:"Outros Conteúdos Delirantes",
     type:"radio",
-    text:"Com que frequência as pessoas dizem que você parece emocionalmente frio, distante ou com pouca expressão no rosto e na voz?",
-    options:FREQ5,
-    scale:"FREQ5"
-  },
-  {
-    name:"32",
-    section:"Sintomas Negativos",
-    type:"radio",
-    text:"Com que frequência você fala pouco, responde com poucas palavras ou tem dificuldade para manter uma conversa?",
-    options:FREQ5,
-    scale:"FREQ5"
+    text:"Você já teve certeza de culpa extrema, punição, condenação ou responsabilidade por acontecimentos que não dependiam diretamente de você?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
 
   {
-    name:"33",
-    section:"Crítica e Convicção",
+    name:"32",
+    section:"Convicção e Crítica",
     type:"radio",
-    text:"Quando você ouve vozes, vê coisas ou tem certezas incomuns, você considera possível que isso possa ser um sintoma ou um engano da mente?",
+    text:"Durante essas experiências, você conseguia considerar seriamente a possibilidade de estar enganado?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"33",
+    section:"Convicção e Crítica",
+    type:"radio",
+    text:"Durante essas experiências, sua certeza era tão forte que nenhuma explicação de outras pessoas conseguia mudar sua convicção?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"34",
-    section:"Crítica e Convicção",
+    section:"Convicção e Crítica",
     type:"radio",
-    text:"Você costuma manter total certeza nessas experiências mesmo quando outras pessoas apresentam explicações diferentes?",
+    text:"Você já reconheceu depois que alguma dessas experiências poderia ter sido sintoma psicológico, alteração de percepção ou interpretação equivocada?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"35",
+    section:"Convicção e Crítica",
+    type:"radio",
+    text:"Outras pessoas próximas concordavam com a realidade dessas experiências ou crenças?",
+    options:["Sim, concordavam","Não, discordavam","Algumas concordavam e outras discordavam","Não contei para ninguém","Não sei","Não se aplica"],
+    required:true
   },
 
   {
-    name:"35",
-    section:"Curso e Progressão",
-    type:"radio",
-    text:"Essas experiências de ouvir, ver, acreditar ou pensar de forma estranha começaram de forma lenta e progressiva ao longo de meses ou anos?",
-    options:YNP,
-    scale:"YNP"
-  },
-  {
     name:"36",
-    section:"Curso e Progressão",
+    section:"Pensamento e Fala Desorganizados",
     type:"radio",
-    text:"Essas experiências de ouvir, ver, acreditar ou pensar de forma estranha começaram de forma repentina em um curto período de tempo?",
+    text:"Você já teve períodos em que sua fala ficou tão confusa que outras pessoas tinham dificuldade para entender o que você queria dizer?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
   {
     name:"37",
-    section:"Curso e Progressão",
+    section:"Pensamento e Fala Desorganizados",
     type:"radio",
-    text:"Essas experiências de ouvir, ver, acreditar ou pensar de forma estranha aparecem em episódios, com períodos de melhora entre eles?",
+    text:"Você já mudou de assunto de forma tão rápida, solta ou desconectada que outras pessoas não conseguiam acompanhar seu raciocínio?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
   {
     name:"38",
-    section:"Curso e Progressão",
+    section:"Pensamento e Fala Desorganizados",
     type:"radio",
-    text:"Essas experiências de ouvir, ver, acreditar ou pensar de forma estranha vêm piorando com o passar do tempo?",
+    text:"Você já respondeu perguntas com frases que não tinham relação clara com o que foi perguntado?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
-
   {
     name:"39",
-    section:"Impacto Funcional",
+    section:"Pensamento e Fala Desorganizados",
     type:"radio",
-    text:"Qual é a gravidade do prejuízo que essas experiências de ouvir, ver, acreditar ou pensar de forma estranha causam no seu trabalho ou nos seus estudos?",
-    options:SEVER4,
-    scale:"SEVER4"
+    text:"Você já sentiu que seus pensamentos ficavam quebrados, embaralhados, interrompidos ou impossíveis de organizar?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"40",
-    section:"Impacto Funcional",
+    section:"Pensamento e Fala Desorganizados",
     type:"radio",
-    text:"Qual é a gravidade do prejuízo que essas experiências de ouvir, ver, acreditar ou pensar de forma estranha causam na sua convivência com familiares, amigos ou outras pessoas?",
-    options:SEVER4,
-    scale:"SEVER4"
-  },
-  {
-    name:"41",
-    section:"Impacto Funcional",
-    type:"radio",
-    text:"Qual é a gravidade do prejuízo que essas experiências de ouvir, ver, acreditar ou pensar de forma estranha causam na sua capacidade de cuidar da rotina, higiene, alimentação ou compromissos?",
-    options:SEVER4,
-    scale:"SEVER4"
+    text:"Outras pessoas já disseram que sua fala parecia incoerente, desconexa ou difícil de acompanhar?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
 
   {
-    name:"42",
-    section:"Risco",
+    name:"41",
+    section:"Comportamento Desorganizado ou Catatônico",
     type:"radio",
-    text:"Alguma voz que você ouviu já mandou você se machucar, machucar outra pessoa ou fazer algo perigoso?",
+    text:"Você já teve períodos em que agiu de forma muito estranha, inadequada ou sem objetivo claro, a ponto de outras pessoas ficarem preocupadas?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"42",
+    section:"Comportamento Desorganizado ou Catatônico",
+    type:"radio",
+    text:"Você já teve dificuldade importante para manter higiene, alimentação, troca de roupas, organização básica ou compromissos por causa dessas alterações mentais?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"43",
-    section:"Risco",
+    section:"Comportamento Desorganizado ou Catatônico",
     type:"radio",
-    text:"Você já se colocou em risco porque acreditava que precisava obedecer vozes, mensagens, sinais ou ordens especiais?",
+    text:"Você já ficou muito agitado, andando sem parar, fazendo movimentos sem finalidade ou sem conseguir se organizar?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
   {
     name:"44",
-    section:"Risco",
+    section:"Comportamento Desorganizado ou Catatônico",
     type:"radio",
-    text:"Você já teve vontade de fugir, se esconder, atacar alguém ou se defender por acreditar que estava sob ameaça real, mesmo sem confirmação disso?",
+    text:"Você já ficou parado, travado, sem responder, sem falar ou com muita dificuldade para iniciar movimentos, mesmo estando acordado?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
-
   {
     name:"45",
-    section:"Humor e Contexto Clínico",
+    section:"Comportamento Desorganizado ou Catatônico",
     type:"radio",
-    text:"Essas experiências de ouvir, ver, acreditar ou pensar de forma estranha costumam aparecer junto com períodos de muita agitação, muita energia, pouco sono ou sensação de estar acelerado demais?",
+    text:"Você já repetiu gestos, posturas, movimentos ou falas de forma estranha, automática ou difícil de controlar?",
     options:YNP,
-    scale:"YNP"
-  },
-  {
-    name:"46",
-    section:"Humor e Contexto Clínico",
-    type:"radio",
-    text:"Essas experiências de ouvir, ver, acreditar ou pensar de forma estranha costumam aparecer junto com períodos de tristeza intensa, desesperança ou desânimo muito forte?",
-    options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
 
   {
-    name:"47",
-    section:"Substâncias e Exclusões",
+    name:"46",
+    section:"Sintomas Negativos",
     type:"radio",
-    text:"Essas experiências de ouvir, ver, acreditar ou pensar de forma estranha começaram ou pioraram após uso de maconha, cocaína, anfetaminas, alucinógenos, álcool ou outras drogas?",
+    text:"Você percebeu redução importante da expressão emocional no rosto, na voz ou nos gestos, notada por você ou por outras pessoas?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"47",
+    section:"Sintomas Negativos",
+    type:"radio",
+    text:"Você passou a falar muito menos, responder com poucas palavras ou ter dificuldade para manter conversas?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
   {
     name:"48",
-    section:"Substâncias e Exclusões",
+    section:"Sintomas Negativos",
     type:"radio",
-    text:"Essas experiências de ouvir, ver, acreditar ou pensar de forma estranha começaram ou pioraram após uso de remédios, hormônios, corticoides ou outras medicações?",
+    text:"Você perdeu motivação para iniciar ou concluir atividades básicas, mesmo quando não estava triste ou fisicamente doente?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
   },
   {
     name:"49",
-    section:"Substâncias e Exclusões",
+    section:"Sintomas Negativos",
     type:"radio",
-    text:"Essas experiências de ouvir, ver, acreditar ou pensar de forma estranha começaram ou pioraram durante febre, infecção, convulsão, desmaio, trauma na cabeça ou outra condição médica importante?",
+    text:"Você perdeu interesse por relações sociais e passou a se isolar sem que isso fosse explicado apenas por ansiedade, tristeza ou conflitos?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"50",
+    section:"Sintomas Negativos",
+    type:"radio",
+    text:"Essas reduções de expressão, fala, motivação ou interesse duraram semanas ou meses de forma contínua?",
+    options:YNP,
+    scale:"YNP",
+    required:true
   },
 
   {
-    name:"50",
+    name:"51",
+    section:"Duração e Curso",
+    type:"radio",
+    text:"Por quanto tempo durou o período mais intenso com alucinações, delírios, fala desorganizada, comportamento desorganizado ou sintomas negativos?",
+    options:["Menos de 1 dia","De 1 dia a menos de 1 mês","De 1 mês a menos de 6 meses","6 meses ou mais","Não sei","Não se aplica"],
+    required:true
+  },
+  {
+    name:"52",
+    section:"Duração e Curso",
+    type:"radio",
+    text:"Houve pelo menos 1 mês com sintomas psicóticos ativos, como alucinações, delírios, fala desorganizada ou comportamento muito desorganizado?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"53",
+    section:"Duração e Curso",
+    type:"radio",
+    text:"Antes dos sintomas mais fortes, houve uma fase de piora gradual com isolamento, queda de rendimento, estranhamento, desconfiança ou perda de motivação?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"54",
+    section:"Duração e Curso",
+    type:"radio",
+    text:"Depois da fase mais intensa, permaneceram sintomas mais leves, como desconfiança, isolamento, pouca motivação, fala reduzida ou ideias estranhas?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"55",
+    section:"Duração e Curso",
+    type:"radio",
+    text:"O quadro começou de forma repentina, em poucos dias ou poucas semanas?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"56",
+    section:"Duração e Curso",
+    type:"radio",
+    text:"O quadro começou de forma lenta e progressiva ao longo de meses ou anos?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"57",
+    section:"Duração e Curso",
+    type:"radio",
+    text:"Entre os episódios, você volta completamente ao seu funcionamento habitual?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+
+  {
+    name:"58",
+    section:"Impacto Funcional",
+    type:"radio",
+    text:"Depois do início dessas experiências, houve queda importante no trabalho, nos estudos ou na produtividade?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"59",
+    section:"Impacto Funcional",
+    type:"radio",
+    text:"Depois do início dessas experiências, houve piora importante nas relações familiares, sociais, afetivas ou profissionais?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"60",
+    section:"Impacto Funcional",
+    type:"radio",
+    text:"Depois do início dessas experiências, houve piora importante no autocuidado, higiene, alimentação, sono, organização da casa ou rotina diária?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"61",
+    section:"Impacto Funcional",
+    type:"radio",
+    text:"Qual foi o maior nível de prejuízo causado por essas experiências na sua vida?",
+    options:SEVER4,
+    scale:"SEVER4",
+    required:true
+  },
+
+  {
+    name:"62",
+    section:"Humor e Psicose",
+    type:"radio",
+    text:"As alucinações, delírios ou pensamentos muito estranhos aconteceram apenas durante períodos de depressão intensa?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"63",
+    section:"Humor e Psicose",
+    type:"radio",
+    text:"As alucinações, delírios ou pensamentos muito estranhos aconteceram apenas durante períodos de muita energia, aceleração, irritabilidade intensa ou redução da necessidade de sono?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"64",
+    section:"Humor e Psicose",
+    type:"radio",
+    text:"Você já teve alucinações, delírios ou pensamento muito desorganizado por pelo menos 2 semanas sem estar deprimido, eufórico, acelerado ou em fase de humor claramente alterado?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"65",
+    section:"Humor e Psicose",
+    type:"radio",
+    text:"Na maior parte do tempo em que os sintomas psicóticos estiveram presentes, também havia sintomas importantes de depressão, euforia, aceleração ou irritabilidade intensa?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"66",
+    section:"Humor e Psicose",
+    type:"radio",
+    text:"Antes ou durante essas experiências, você teve períodos de dormir muito pouco e ainda assim se sentir com muita energia?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+
+  {
+    name:"67",
+    section:"Substâncias e Medicações",
+    type:"radio",
+    text:"Essas experiências começaram ou pioraram durante ou logo após uso de maconha, cocaína, crack, anfetaminas, alucinógenos, ecstasy, álcool ou outras drogas?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"68",
+    section:"Substâncias e Medicações",
+    type:"radio",
+    text:"Essas experiências começaram ou pioraram durante abstinência de álcool, drogas, calmantes ou outras substâncias?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"69",
+    section:"Substâncias e Medicações",
+    type:"radio",
+    text:"Essas experiências começaram ou pioraram após início, aumento ou troca de antidepressivos, estimulantes, corticoides, hormônios, remédios para sono ou outras medicações?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"70",
+    section:"Substâncias e Medicações",
+    type:"checkbox",
+    text:"Se houve relação com substâncias ou medicações, marque quais estavam envolvidas.",
+    options:["Maconha","Cocaína/crack","Anfetaminas/estimulantes","Alucinógenos","Ecstasy/MDMA","Álcool","Calmantes/benzodiazepínicos","Antidepressivos","Corticoides","Hormônios","Remédios para sono","Outras","Não houve relação","Não sei","Não se aplica"],
+    required:true
+  },
+
+  {
+    name:"71",
+    section:"Condição Médica e Neurológica",
+    type:"radio",
+    text:"Essas experiências começaram ou pioraram junto com febre, infecção, confusão mental, desorientação, convulsão, desmaio, trauma na cabeça ou doença clínica importante?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"72",
+    section:"Condição Médica e Neurológica",
+    type:"radio",
+    text:"Durante essas experiências, você ficou desorientado, confuso, sonolento, com alteração importante de consciência ou sem conseguir reconhecer bem onde estava?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"73",
+    section:"Condição Médica e Neurológica",
+    type:"radio",
+    text:"Essas experiências aconteciam principalmente ao pegar no sono, ao acordar, em privação intensa de sono ou em períodos de exaustão extrema?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"74",
+    section:"Condição Médica e Neurológica",
+    type:"checkbox",
+    text:"Marque se alguma condição abaixo estava presente quando os sintomas começaram ou pioraram.",
+    options:["Febre ou infecção","Convulsão","Desmaio","Trauma na cabeça","Doença neurológica","Doença endócrina/hormonal","Dor intensa","Privação de sono","Confusão mental","Nenhuma dessas","Não sei","Não se aplica"],
+    required:true
+  },
+
+  {
+    name:"75",
+    section:"Cultura, Religião e Contexto",
+    type:"radio",
+    text:"As experiências relatadas são compartilhadas ou consideradas normais dentro da sua religião, cultura, prática espiritual ou grupo social?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"76",
+    section:"Cultura, Religião e Contexto",
+    type:"radio",
+    text:"Mesmo dentro do seu contexto religioso, cultural ou espiritual, outras pessoas próximas consideraram suas experiências excessivas, perigosas ou fora do habitual?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+
+  {
+    name:"77",
+    section:"Risco Clínico",
+    type:"radio",
+    text:"Alguma voz, mensagem, sinal ou certeza já mandou você se machucar, machucar alguém ou fazer algo perigoso?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"78",
+    section:"Risco Clínico",
+    type:"radio",
+    text:"Você já se colocou em risco, fugiu, se escondeu, atacou alguém ou tentou se defender por acreditar que estava sob ameaça real?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"79",
+    section:"Risco Clínico",
+    type:"radio",
+    text:"Durante essas experiências, você já pensou em morrer, se matar ou que seria melhor não existir?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"80",
+    section:"Risco Clínico",
+    type:"radio",
+    text:"Durante essas experiências, você já precisou de atendimento de urgência, internação, contenção, afastamento do trabalho ou supervisão contínua de familiares?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+
+  {
+    name:"81",
     section:"História Familiar",
     type:"radio",
-    text:"Há pessoas na sua família que já ouviram vozes, tiveram delírios, passaram por surtos ou receberam diagnóstico de esquizofrenia, transtorno esquizoafetivo ou outro transtorno psicótico?",
+    text:"Há familiares com diagnóstico de esquizofrenia, transtorno esquizoafetivo, transtorno bipolar, depressão com psicose ou outro transtorno psicótico?",
     options:YNP,
-    scale:"YNP"
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"82",
+    section:"História Familiar",
+    type:"radio",
+    text:"Há familiares que já tiveram surtos, delírios, alucinações, internações psiquiátricas ou uso de antipsicóticos?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+
+  {
+    name:"83",
+    section:"Tratamento e Resposta",
+    type:"radio",
+    text:"Você já usou antipsicótico, estabilizador de humor ou medicação psiquiátrica para tratar essas experiências?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+  {
+    name:"84",
+    section:"Tratamento e Resposta",
+    type:"radio",
+    text:"Essas experiências melhoraram claramente com antipsicótico, estabilizador de humor, internação, sono regular ou suspensão de substância/medicação?",
+    options:YNP,
+    scale:"YNP",
+    required:true
+  },
+
+  {
+    name:"85",
+    section:"Descrição Clínica",
+    type:"input",
+    text:"Descreva o episódio mais importante: o que aconteceu, quanto tempo durou, qual era sua certeza na época, o que outras pessoas observaram e qual prejuízo ocorreu.",
+    required:false
   }
-];
-    
+];    
 const INDICATORS_CONFIG = {};
 
     /**************************************************************
